@@ -1,0 +1,55 @@
+.gallery {
+    background-image: linear-gradient(to bottom, #F9EBE0, #001219 25%);
+}
+
+.my-masonry-grid {
+    display: flex;
+    width: auto;
+}
+
+.my-masonry-grid_column {
+    background-clip: padding-box;
+}
+
+.my-masonry-grid img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    transition: 0.5s linear all;
+}
+
+.img-card {
+    margin: 1rem 0.5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.img-deets {
+    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    overflow: hidden;
+    height: 0%;
+    width: 0%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.536);
+    transition: all 0.3s linear;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.img-card:hover .img-deets {
+    height: 100%;
+    opacity: 1;
+    border-radius: 0;
+}
+
+.img-deets * {
+    padding: 0 0.25rem;
+}

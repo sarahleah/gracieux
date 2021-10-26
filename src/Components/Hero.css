@@ -1,0 +1,71 @@
+.hero-wrap {
+    position: relative;
+    height: 150vh;
+}
+
+.hero {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-imgs {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    width: min(100vh, 100vw);
+    height: fit-content
+}
+
+.hero-imgs img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.hero-imgs .untitled {
+    margin-top: 60%;
+    grid-row: 1;
+    grid-column: 2 / span 7;
+}
+
+.hero-imgs .self-portrait {
+    margin-top: 10%;
+    grid-row: 1;
+    grid-column: 6 / span 7;
+}
+
+.hero-imgs .amer-horr {
+    grid-row: 1;
+    grid-column: 1 / span 6;
+}
+
+.hero-txt {
+    font-size: 3rem;
+}
+
+.hero-wrap .scroll {
+    transform:  translate(-48%, -50vh) rotate(-90deg);
+    position: absolute;
+    overflow: hidden;
+    text-align: left;
+}
+
+.hero-wrap .line {
+    height: 1px;
+    background-color: black;
+    width: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        display: block;
+    }
+
+    .gracieux {
+        padding: 1rem 0;
+        z-index: 9;
+    }
+}

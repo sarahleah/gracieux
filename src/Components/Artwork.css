@@ -1,0 +1,88 @@
+.description {
+    text-align: left;
+}
+
+h2.title {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.description h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.artwork .artwork-main {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.artwork .artwork-main .artwork-img {
+    margin: 1rem auto;
+}
+
+.infobox {
+    width: unset !important;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid navy;
+}
+
+.infobox * {
+    text-align: center;
+}
+
+#toc.toc ul {
+    grid-column: 1;
+    width: 50vw;
+    text-align: left;
+}
+
+.artwork-main .description p, #toc.toc {
+    margin: 1rem;
+}
+
+.description .thumbinner, .description .gallerybox *, .description .gallerybox {
+    width: unset !important;
+}
+
+.description .thumb img {
+    margin: 0 auto;
+    padding-bottom: 0.25rem;
+}
+
+.description .thumb {
+    padding: 1rem;
+    border-top: 1px solid navy;
+    border-bottom: 1px solid navy;
+}
+
+.description .thumbcaption {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description .gallery {
+    background-image: none;
+}
+
+@media screen and (max-width: 770px) {
+    .artwork table {
+        width: 100%;
+        margin: 0 auto;
+        float: none !important;
+        clear: none !important;
+    }
+
+    .mw-parser-output .sidebar {
+        float: none !important;
+        clear: none !important;
+        width: 100% !important;
+        line-height: unset !important;
+    }
+
+    .artwork td {
+        padding: 1rem 0;
+    }
+}

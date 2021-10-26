@@ -1,0 +1,28 @@
+.icon-nav {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 10;
+}
+
+.icon-nav button {
+    background-color: transparent;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-nav:hover {
+    transform: scale(102%);
+}
+
+@media screen and (max-width: 770px) {
+    .icon-nav {
+        top: unset;
+        bottom: 2rem;
+    }
+}
