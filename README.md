@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+Graciuex - An online gallery
+======================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An experiment in using API's to generate content
 
-## Available Scripts
+**See it live at: https://gracieux.surge.sh/**
 
-In the project directory, you can run:
+* [Technologies](#technologies-used)
+* [Approach](#approach)
+* [Features](#features)
+* [Lessons Learned](#lessons-learned)
+* [Setup](#setup)
+* [Unsolved Problems](#unsolved-problems)
+* [Future Additions](#future-additions)
 
-### `npm start`
+Technologies used:
+------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* React
+* Axios
+* React Router DOM
+* CSS
+* JavaScript
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Approach:
+---------
 
-### `npm test`
+Coming into this project, I knew that I wanted to play with visual effects such as paralax, and that I wanted to use a chain of API's to find relevant data. I started with a board on figma (link below), and worked from a purely curious standpoint to see how much knowledge I could learn and solidify with this project. I now have a more firm understanding of useEffect and useRefs, as well as custom Hooks and memory leaks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here's a link to the initial wireframes I did: https://www.figma.com/file/NZsdzl0zU8Al2CosgjkI92/Final?node-id=2%3A3
 
-### `npm run build`
+Features: 
+---------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Masonry grid / Infinitely scrolling gallery of images from the Chicago Art Institute
+- Content from the wikipedia search API and parse API
+    - Initially, the program searches wikipedia for pages that contains the first five words of the given artwork.
+    - It then looks for a result that contains the artists first name
+    - If that isn't found it will return the first result, or if none, a link to make your own wiki page for it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Lessons Learned:
+----------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+During this project, I had to accept the lack of control I had over the data that I recieved back from exterior sources. Wikipedia, for example returns either HTML or Wikitext that has a very loosely defined structure that makes it difficult to find relevant data. This makes it extremely hard to style. That lack of organization made me think about my own design choices, and going forward will make me a more thoughtful data structurer.
 
-### `npm run eject`
+Unsolved Problems:
+------------------
+- The formatted wiki content is not always relevant, and is not formatted in an extremely appealing manner. I could fix this in the future by cleaning the HTML result more rigorously.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Future Additions: 
+-----------------
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would like to add:
+* More interactions - favourite paintings, personal gallery, favourite artist etc.
