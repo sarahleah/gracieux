@@ -4,14 +4,15 @@ export function makeImgSrcUrl(width, height, builtUrl) {
 
     let size = `${width},${height}`
 
-    return path.join(builtUrl, 'full', size, '0', 'default.jpg')
+    return builtUrl + path.join('/full', size, '0', 'default.jpg')
 
 }
 
 export function makeIiifUrl(data) {
     let imgId = data.data.image_id
     let baseUrl = data.config.iiif_url
-    return path.join(baseUrl, imgId)
+    console.log(baseUrl)
+    return baseUrl + '/' + imgId
 }
 
 export function getImgProperties(data) {

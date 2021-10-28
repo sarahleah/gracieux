@@ -47,7 +47,6 @@ export default function Hero() {
                     let { width, height } = res.data.sizes[2]
                     
                     let imgUrl = makeImgSrcUrl(width, height, builtUrl)
-
                     setImgSrcs(prevState => ({...prevState, [id]: {id, imgUrl, alt, title, artist}}))
                 })
                 .catch(err => {
