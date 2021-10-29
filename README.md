@@ -25,7 +25,7 @@ Technologies used:
 Approach:
 ---------
 
-Coming into this project, I knew that I wanted to play with visual effects such as paralax, and that I wanted to use a chain of API's to find relevant data. I started with a board on figma (link below), and worked from a purely curious standpoint to see how much knowledge I could learn and solidify with this project. I now have a more firm understanding of useEffect and useRefs, as well as custom Hooks and memory leaks.
+Coming into this project, I knew that I wanted to play with visual effects such as parallax, and that I wanted to use a chain of API's to find relevant data. I started with a board on figma (link below), and worked from a purely curious standpoint to see how much knowledge I could learn and solidify with this project. I now have a more firm understanding of useEffect and useRefs, as well as custom Hooks and memory leaks.
 
 Here's a link to the initial wireframes I did: https://www.figma.com/file/NZsdzl0zU8Al2CosgjkI92/Final?node-id=2%3A3
 
