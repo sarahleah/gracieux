@@ -11,7 +11,6 @@ export function makeImgSrcUrl(width, height, builtUrl) {
 export function makeIiifUrl(data) {
     let imgId = data.data.image_id
     let baseUrl = data.config.iiif_url
-    console.log(baseUrl)
     return baseUrl + '/' + imgId
 }
 
@@ -30,5 +29,5 @@ export function getImgProperties(data) {
 
 export function getArtApiUrlById(id) {
     let baseUrl = `https://api.artic.edu/api/v1/artworks/`
-    return path.join(baseUrl, id)
+    return `${baseUrl}${id}`
 }
